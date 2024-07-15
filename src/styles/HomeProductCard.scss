@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+
+.ant-card-cover {
+  img {
+    height: 180px; // Adjust this value to your desired height
+    object-fit: contain; // This ensures the image is contained within the specified height without distortion
+  }
+}
+
+.ant-card-meta-description {
+  white-space: nowrap;
+  /* Prevents text from wrapping */
+  overflow: hidden;
+  /* Hides overflowing text */
+  text-overflow: ellipsis;
+  /* Displays ellipsis for overflowed text */
+}

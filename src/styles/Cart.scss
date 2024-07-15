@@ -1,0 +1,61 @@
+/* Cart.scss */
+
+@import 'variables';
+@import 'mixins';
+
+.cart-container {
+  padding: 20px;
+}
+
+.cart-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  @include card-style;
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+  margin-bottom: 20px;
+
+  .product-card-image {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .product-card-content {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .product-card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .product-card-description {
+    margin-bottom: 10px;
+  }
+
+  .product-card-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .remove-from-cart-btn {
+    @include button-style($color-danger);
+  }
+}

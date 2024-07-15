@@ -1,0 +1,26 @@
+/* mixins.scss */
+
+@mixin button-style($bg-color) {
+  background-color: $bg-color;
+  color: $color-white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-style {
+  border: 1px solid $color-gray;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+  background-color: $color-white;
+}

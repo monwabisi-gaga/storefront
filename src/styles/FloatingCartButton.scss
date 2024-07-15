@@ -1,0 +1,11 @@
+@import 'variables';
+
+.floating-cart-button {
+  position: fixed;
+  bottom: 20px;
+  /* Adjust as needed */
+  right: 20px;
+  /* Adjust as needed */
+  z-index: 1000;
+  /* Ensure the button appears above other content */
+}
